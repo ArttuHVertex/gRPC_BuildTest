@@ -66,5 +66,5 @@ jobs:
             -DCMAKE_INSTALL_PREFIX=$MY_INSTALL_DIR \
             ../..
           make -j 4
-          make install
+          sudo make install
           popd
