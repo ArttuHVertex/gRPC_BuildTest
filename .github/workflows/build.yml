@@ -68,3 +68,12 @@ jobs:
           make -j 4
           sudo make install
           popd
+          
+      - name: Build the example
+        run: |
+          cd examples/cpp/helloworld
+          mkdir -p cmake/build
+          pushd cmake/build
+          cmake -DCMAKE_PREFIX_PATH=$MY_INSTALL_DIR ../..
+          make -j 4
+          
