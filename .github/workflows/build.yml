@@ -94,5 +94,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: example-vs-solution
-          path: examples/cpp/helloworld/cmake/build/
+          path: grpc/examples/cpp/helloworld/cmake/build
           
