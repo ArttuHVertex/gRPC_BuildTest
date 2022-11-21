@@ -75,6 +75,7 @@ jobs:
           cd examples/cpp/helloworld
           mkdir -p cmake/build
           pushd cmake/build
+          cmake .. -G "Visual Studio 16 2019"
           cmake -DCMAKE_PREFIX_PATH=$MY_INSTALL_DIR ../..
           make -j 4
           
