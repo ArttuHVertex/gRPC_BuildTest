@@ -78,3 +78,18 @@ jobs:
           cmake -DCMAKE_PREFIX_PATH=$MY_INSTALL_DIR ../..
           make -j 4
           
+      - name: Look into the build results
+        run: |
+          cd grpc
+          cd examples/cpp/helloworld
+          ls
+          cd cmake
+          ls
+          cd build
+          ls
+          
+      - uses: actions/upload-artifact@v3
+        with:
+          name: example-vs-solution
+          path: examples/cpp/helloworld/cmake/build/
+          
