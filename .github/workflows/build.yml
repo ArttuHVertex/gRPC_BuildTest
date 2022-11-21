@@ -71,6 +71,7 @@ jobs:
           
       - name: Build the example
         run: |
+          cd grpc
           cd examples/cpp/helloworld
           mkdir -p cmake/build
           pushd cmake/build
