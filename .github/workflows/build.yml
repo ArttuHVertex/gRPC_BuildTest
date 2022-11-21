@@ -82,10 +82,13 @@ jobs:
         run: |
           cd grpc
           cd examples/cpp/helloworld
+          echo "Contents of examples/cpp/helloworld"
           ls
           cd cmake
+          echo "Contents of examples/cpp/helloworld/cmake"
           ls
           cd build
+          echo "Contents of examples/cpp/helloworld/cmake/build"
           ls
           
       - uses: actions/upload-artifact@v3
